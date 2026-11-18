@@ -5,6 +5,10 @@ A social network for musicians. Create a profile, list your experience and cours
 - **Frontend** (`musicchat-fe`): React 17, Redux + redux-thunk, React Router 5, MUI / React-Bootstrap, Sass
 - **Backend** (`musicchat-be`): Node.js, Express, MongoDB (Mongoose), JWT auth, bcrypt
 
+## Demo
+
+▶️ **[Watch the demo video](https://github.com/ayusdasdev/musicchat/releases/download/v1.0.0/musicchat-demo.mp4)** (MP4, 268 MB, attached to the [v1.0.0 release](https://github.com/ayusdasdev/musicchat/releases/tag/v1.0.0))
+
 ## Project structure
 
 ```
@@ -45,7 +49,7 @@ Options:
 
 ```bash
 ./start.sh --reset                       # wipe the local database first
-MONGO_URI="mongodb+srv://..." ./start.sh # use an external DB (e.g. Atlas) instead
+MONGO_URI="mongodb://..." ./start.sh     # use your own MongoDB instead
 ```
 
 Press `Ctrl+C` to stop everything.
@@ -93,10 +97,6 @@ All routes are under `/api`. Protected routes need an `x-auth-token` header.
 | `auth`    | `GET /auth` – current user · `POST /auth` – login |
 | `profile` | `GET /profile/me` · `POST /profile` · `GET /profile` · `GET /profile/user/:user_id` · `DELETE /profile` · `PUT /profile/experience` · `DELETE /profile/experience/:exp_id` · `PUT /profile/course` · `DELETE /profile/course/:crc_id` |
 | `posts`   | `POST /posts` · `GET /posts` · `GET /posts/:id` · `DELETE /posts/:id` · `PUT /posts/like/:id` · `PUT /posts/unlike/:id` · `POST /posts/comment/:id` · `DELETE /posts/comment/:id/:comment_id` |
-
-## Deployment
-
-The backend is set up for **Render** (with **MongoDB Atlas**) and the frontend for **Vercel**. See [`musicchat-be/DEPLOY.md`](musicchat-be/DEPLOY.md) for the step-by-step guide.
 
 ## Author
 

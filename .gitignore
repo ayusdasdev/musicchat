@@ -22,3 +22,7 @@ Thumbs.db
 .vscode/
 .idea/
 *.log
+
+# Screen recordings (hosted as a GitHub release asset instead)
+*.mp4
+*.mov

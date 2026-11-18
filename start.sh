@@ -2,7 +2,7 @@
 # Run MusicChat locally: MongoDB + backend (:5000) + frontend (:3000).
 #   ./start.sh           start everything (Ctrl+C stops it all)
 #   ./start.sh --reset   wipe the local database first
-# Set MONGO_URI to use an external database (e.g. Atlas) instead of the local one.
+# Set MONGO_URI to use an external database instead of the local one.
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
