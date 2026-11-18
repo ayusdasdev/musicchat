@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Builds
+build/
+
+# Env files / secrets
+.env
+.env.local
+.env.*.local
+
+# Local dev database + generated secret
+.dev/db-data/
+.dev/jwt_secret
+
+# Windows download metadata
+*Zone.Identifier
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log

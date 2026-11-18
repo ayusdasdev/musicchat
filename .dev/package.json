@@ -1,0 +1,7 @@
+{
+  "name": "musicchat-dev",
+  "private": true,
+  "dependencies": {
+    "mongodb-memory-server": "^9.5.0"
+  }
+}
